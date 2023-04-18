@@ -1,0 +1,279 @@
+@import "reset";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+// font-family: 'Dancing Script', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+// font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+// font-family: 'DM Serif Text', serif;
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap');
+// font-family: 'Old Standard TT', serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+// font-family: 'Playfair Display', serif;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap');
+// font-family: 'Dosis', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap');
+// font-family: 'Gayathri', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+// font-family: 'IBM Plex Sans', sans-serif;
+
+
+$black: #040505;
+$blue: #D2E2EE;
+$ohra: #F8C3A1;
+$green: #264A51;
+
+
+header{
+	background-size: cover;
+	background-position: center top;
+	nav{
+		padding: 20px;
+		max-width: 1240px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 110px;
+		.logo{
+			span{
+				font-family: 'Dancing Script', cursive;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 152.5%;
+				letter-spacing: 0.045em;
+				color: $black;
+				white-space: nowrap;
+			}
+		}
+		ul{
+			display: flex;
+			align-items: center;
+			width: 70%;
+			justify-content: space-between;
+			a{
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 23px;
+				letter-spacing: 0.045em;
+				color: $black;
+			}
+		}
+	}
+	.header-main{
+		background: url('/img/header/блог\ 1.png') no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 880px;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		h1{
+			font-family: 'Gayathri', sans-serif;
+			font-weight: 700;
+			font-size: 75px;
+			line-height: 92px;
+			letter-spacing: 0.045em;
+			color: #FFFFFF;
+			
+		}
+	}
+}
+
+main{
+	section{
+		flex-flow: column;
+		display: flex;
+		align-items: center;
+		display: flex;
+	}
+	h2{
+		margin: 120px 0 0 0;
+		font-family: 'Gayathri', sans-serif;
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 40px;
+		letter-spacing: 0.045em;
+		color: #000000;
+	}
+	.section-text{
+		margin: 120px 0 0 0;
+		flex-flow: row;
+		display: flex;
+		width: 100%;
+		.text{
+			padding: 100px 80px;
+			background: #D3E2EF;
+			flex-flow: column;
+			display: flex;
+			gap: 10px;
+			justify-content: center;
+			p{
+				font-family: 'Gayathri', sans-serif;
+				font-weight: 400;
+				font-size: 32px;
+				line-height: 46px;
+				letter-spacing: 0.045em;
+				color: #000000;
+			}
+		}
+	}
+	.albums{
+		flex-flow: column;
+		display: flex;
+		gap: 140px;
+		max-width: 1240px;
+		margin: 0 auto;
+		.legend{
+			flex-flow: row;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 40px;
+			p{
+				font-family: 'Gayathri', sans-serif;
+				font-weight: 400;
+				font-size: 32px;
+				line-height: 39px;
+				letter-spacing: 0.045em;
+				color: #000000;
+			}
+		}
+	}
+	.interesting{
+		flex-flow: column;
+		display: flex;
+		align-items: start;
+		max-width: 1240px;
+		margin: 40px auto 0;
+		gap: 100px;
+		.text{
+			background: #D3E2EF;
+			padding: 30px;
+			p{
+				font-family: 'Gayathri', sans-serif;
+				font-weight: 400;
+				font-size: 32px;
+				line-height: 39px;
+				letter-spacing: 0.045em;
+				
+				color: #000000;
+			}
+		}
+
+	}
+}
+
+footer{
+	padding: 200px 0 0 0;
+	background: #FFFFFF;
+	display: flex;
+	flex-flow: column;
+	gap: 90px;
+	align-items: center;
+	.info{
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row;
+		align-items: start;
+		justify-content: space-around;
+		.block{
+			width: 280px;
+			display: flex;
+			flex-flow: column;
+			align-items: start;
+			gap: 30px;
+			h3{
+				font-family: 'Dosis';
+				font-weight: 700;
+				font-size: 25px;
+				line-height: 82px;
+				letter-spacing: 0.05em;
+				color: $green;
+			}
+			.links, .p{
+				display: flex;
+				flex-flow: column;
+				gap: 10px;
+			}
+			p, a{
+				font-family: 'Open Sans';
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 24px;
+				letter-spacing: 0.03em;
+				color: #335E74;
+			}
+			.icons{
+				flex-flow: row;
+				display: flex;
+				align-items: center;
+				gap: 15px;
+				.circle{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
+					border: 1px solid #F6FDFF;
+					border-radius: 50%;
+				}
+			}
+			.time{
+				width: 100%;
+				background: #D3E2EF;
+				border-radius: 7px;
+				padding: 25px 30px;
+				display: flex;
+				flex-flow: column;
+				gap: 13px;
+				.line{
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					span{
+						font-family: 'Open Sans';
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 24px;
+						letter-spacing: 0.03em;
+						color: #335E74;
+					}
+					p{
+						font-family: 'Open Sans';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 24px;
+						letter-spacing: 0.03em;
+						color: #264A51;
+					}
+				}
+			}
+		}
+	}
+	.rights{
+		width: 100%;
+		padding: 20px 0;
+		background: #D3E2EF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.block-text{
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			gap: 10px;
+			p{
+				font-family: 'Open Sans';
+				font-weight: 400;
+				font-size: 10px;
+				letter-spacing: 0.045em;
+				color: #335E74;
+			}
+		}
+	}
+}

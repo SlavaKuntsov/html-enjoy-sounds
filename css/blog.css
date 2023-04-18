@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  widows: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:-moz-focus-iner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+header {
+  background-size: cover;
+  background-position: center top;
+}
+header nav {
+  padding: 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+header nav .logo span {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 152.5%;
+  letter-spacing: 0.045em;
+  color: #040505;
+  white-space: nowrap;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+}
+header nav ul a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+  color: #040505;
+}
+header .header-main {
+  background: url("/img/header/блог 1.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 880px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+header .header-main h1 {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 92px;
+  letter-spacing: 0.045em;
+  color: #FFFFFF;
+}
+
+main section {
+  flex-flow: column;
+  display: flex;
+  align-items: center;
+  display: flex;
+}
+main h2 {
+  margin: 120px 0 0 0;
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 40px;
+  letter-spacing: 0.045em;
+  color: #000000;
+}
+main .section-text {
+  margin: 120px 0 0 0;
+  flex-flow: row;
+  display: flex;
+  width: 100%;
+}
+main .section-text .text {
+  padding: 100px 80px;
+  background: #D3E2EF;
+  flex-flow: column;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+main .section-text .text p {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.045em;
+  color: #000000;
+}
+main .albums {
+  flex-flow: column;
+  display: flex;
+  gap: 140px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+main .albums .legend {
+  flex-flow: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+main .albums .legend p {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.045em;
+  color: #000000;
+}
+main .interesting {
+  flex-flow: column;
+  display: flex;
+  align-items: start;
+  max-width: 1240px;
+  margin: 40px auto 0;
+  gap: 100px;
+}
+main .interesting .text {
+  background: #D3E2EF;
+  padding: 30px;
+}
+main .interesting .text p {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 0.045em;
+  color: #000000;
+}
+
+footer {
+  padding: 200px 0 0 0;
+  background: #FFFFFF;
+  display: flex;
+  flex-flow: column;
+  gap: 90px;
+  align-items: center;
+}
+footer .info {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  align-items: start;
+  justify-content: space-around;
+}
+footer .info .block {
+  width: 280px;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  gap: 30px;
+}
+footer .info .block h3 {
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 82px;
+  letter-spacing: 0.05em;
+  color: #264A51;
+}
+footer .info .block .links, footer .info .block .p {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+footer .info .block p, footer .info .block a {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #335E74;
+}
+footer .info .block .icons {
+  flex-flow: row;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+footer .info .block .icons .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #F6FDFF;
+  border-radius: 50%;
+}
+footer .info .block .time {
+  width: 100%;
+  background: #D3E2EF;
+  border-radius: 7px;
+  padding: 25px 30px;
+  display: flex;
+  flex-flow: column;
+  gap: 13px;
+}
+footer .info .block .time .line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .info .block .time .line span {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #335E74;
+}
+footer .info .block .time .line p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #264A51;
+}
+footer .rights {
+  width: 100%;
+  padding: 20px 0;
+  background: #D3E2EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .rights .block-text {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 10px;
+}
+footer .rights .block-text p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.045em;
+  color: #335E74;
+}
